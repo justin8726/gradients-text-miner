@@ -1,0 +1,16 @@
+training:
+  epochs: 1
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 4
+  logging_steps: 10
+  save_strategy: "no"
+
+optimization:
+  instruct_learning_rate: 0.00002
+  dpo_learning_rate: 0.0000005
+  grpo_learning_rate: 0.000001
+  chat_learning_rate: 0.00002
+
+limits:
+  max_sequence_length: 1024
+  max_completion_length: 256
